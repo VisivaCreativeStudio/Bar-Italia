@@ -2,11 +2,6 @@
   #index.css
 \*-----------------------------------*/
 
-
-/**
- * copyright 2022 codewithsadee
- */
-
 @font-face {
     font-family: "Bonjour";
     src: url("./fonts/bonjour1-webfont.woff2") format("woff2");
@@ -622,15 +617,6 @@ body.nav-active {
 
 
 /*-----------------------------------*\
-    #TOPBAR
-  \*-----------------------------------*/
-
-.topbar {
-    display: none;
-}
-
-
-/*-----------------------------------*\
     #HEADER
   \*-----------------------------------*/
 
@@ -814,6 +800,17 @@ body.nav-active {
     color: var(--dark-blue);
 }
 
+.localization {
+    margin-top: 2em;
+    border: 1px solid var(--light-blue);
+    border-radius: 10px;
+}
+
+.localization:hover {
+    border: 1px solid var(--light-blue);
+    background-color: var(--light-blue);
+}
+
 .sidebar-link {
     transition: var(--transition-1);
 }
@@ -884,41 +881,6 @@ body.nav-active {
     margin: 0 auto;
     width: 100%;
     height: 80vh;
-}
-
-
-/*-----------------------------------*\
-    #BACK TO TOP
-  \*-----------------------------------*/
-
-.back-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--light-blue);
-    color: var(--pure-white);
-    font-size: 22px;
-    width: 50px;
-    height: 50px;
-    border-radius: var(--radius-circle);
-    display: grid;
-    place-items: center;
-    box-shadow: var(--shadow-1);
-    transition: var(--transition-1);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 4;
-}
-
-.back-top-btn:is(:hover,
- :focus-visible) {
-    background-color: var(--white);
-    color: var(--light-blue);
-}
-
-.back-top-btn.active {
-    opacity: 1;
-    visibility: visible;
 }
 
 
@@ -1085,7 +1047,6 @@ footer {
     .container,
      :is(.service,
     .event) .container {
-        max-width: 1200px;
         width: 100%;
         margin-inline: auto;
     }
@@ -1098,55 +1059,7 @@ footer {
     .topbar .separator {
         display: block;
     }
-    /**
-     * HEADER
-     */
-    .nav-open-btn,
-    .navbar>*:not(.navbar-list),
-    .header .overlay {
-        display: none;
-    }
-    .header .container {
-        max-width: unset;
-    }
-    .navbar,
-    .navbar.active,
-    .navbar-list {
-        all: unset;
-    }
-    .navbar,
-    .navbar.active {
-        margin-inline: auto 20px;
-    }
-    .navbar-list {
-        display: flex;
-        gap: 30px;
-    }
-    .navbar-item {
-        border-block-start: none;
-    }
-    .navbar .separator {
-        display: none;
-    }
-    .navbar-link:is(:hover,
-     :focus-visible,
-    .active) .span {
-        transform: unset;
-    }
-    .navbar-link {
-        font-weight: var(--weight-bold);
-        letter-spacing: var(--letterSpacing-1);
-    }
-    .navbar-link::after {
-        display: block;
-    }
-    .navbar-link.active::after {
-        transform: scaleX(1);
-        opacity: 1;
-    }
-    .header .btn {
-        margin-inline-start: 0;
-    }
+    
     /**
      * HERO
      */
@@ -1172,7 +1085,7 @@ footer {
 }
 
 
-/*-----------MENU CSS-----------*/
+/*-----------LIST MENU CSS-----------*/
 
 .menu-main {
     text-align: center;
