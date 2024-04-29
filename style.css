@@ -1114,9 +1114,10 @@ hr {
 }
 
 #sub-category {
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    width: 90vw;
+    text-align: left;
+    padding-block: 2em 1em;
+    margin: auto;
     font-family: var(--fontFamily-dm_sans);
     color: var(--dark-blue);
     font-weight: 500;
