@@ -17,7 +17,7 @@
     /**
      * COLORS
      */
-    --primary-backgroud: #eeeeee;
+    --primary-background: #eeeeee;
     --pure-white: #fff;
     --dark-blue: #0e2443;
     --light-blue: #5D8BC9;
@@ -152,7 +152,7 @@ html {
 }
 
 body {
-    background-color: var(--primary-backgroud);
+    background-color: var(--primary-background);
     color: var(--dark-blue);
     font-family: var(--fontFamily-dm_sans);
     font-size: var(--fontSize-body-4);
@@ -591,7 +591,7 @@ body.nav-active {
     width: 50px;
     height: 50px;
     border-radius: var(--radius-circle);
-    border: 3px solid var(--primary-backgroud);
+    border: 3px solid var(--primary-background);
     border-block-start-color: var(--light-blue);
     margin-block-end: 45px;
     animation: rotate360 1s linear infinite;
@@ -638,8 +638,8 @@ body.nav-active {
 
 .header.active {
     padding-block: 20px;
-    background-color: var(--primary-backgroud);
-    border-color: var(--primary-backgroud);
+    background-color: var(--primary-background);
+    border-color: var(--primary-background);
 }
 
 .header.hide {
@@ -688,7 +688,7 @@ body.nav-active {
 
 .navbar {
     position: fixed;
-    background-color: var(--primary-backgroud);
+    background-color: var(--primary-background);
     top: 0;
     left: -360px;
     bottom: 0;
@@ -738,7 +738,7 @@ body.nav-active {
 }
 
 .navbar-list {
-    border-block-end: 1px solid var(--primary-backgroud);
+    border-block-end: 1px solid var(--primary-background);
     margin-block-end: 100px;
     text-align: center;
 }
@@ -830,7 +830,7 @@ body.nav-active {
 }
 
 .navbar::-webkit-scrollbar-thumb {
-    background-color: var(--primary-backgroud);
+    background-color: var(--primary-background);
 }
 
 .overlay {
