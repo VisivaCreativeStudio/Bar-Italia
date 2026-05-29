@@ -731,11 +731,11 @@ body.nav-active {
     margin-block-end: 60px;
 }
 
-@media screen and (min-width: 776px) {
+/*@media screen and (min-width: 776px) {
     .logo {
         display: none;
     }
-}
+}*/
 
 .navbar-list {
     border-block-end: 1px solid var(--primary-background);
