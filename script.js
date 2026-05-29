@@ -49,7 +49,7 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 
 /**
  * HEADER & BACK TOP BTN
- */
+
 
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
@@ -76,5 +76,5 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
   }
-});
+}); */
 
